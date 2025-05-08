@@ -90,18 +90,18 @@ def pandas_df_from_formula(formula: str, data = pd.DataFrame):
 
 
 
-# Example data
-N = 1000
-y = np.random.random(size=N)
-data = pd.DataFrame.from_dict(
-    {
-        'y': y,
-        'x1': np.random.randint(low=0, high=5, size=N),
-        'x2': np.sqrt(y)
-    }
-)
+# # Example data
+# N = 1000
+# y = np.random.random(size=N)
+# data = pd.DataFrame.from_dict(
+#     {
+#         'y': y,
+#         'x1': np.random.randint(low=0, high=5, size=N),
+#         'x2': np.sqrt(y)
+#     }
+# )
 
-formula = 'y~ x1+ x2^2 +  x2'
+# formula = 'y~ x1+ x2^2 +  x2'
 
-a = pandas_df_from_formula(formula=formula, data=data)
-print(a.head())
+# a = pandas_df_from_formula(formula=formula, data=data)
+# print(a.head())
