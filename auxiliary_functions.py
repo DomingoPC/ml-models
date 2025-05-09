@@ -54,7 +54,7 @@ def numpy_array_from_formula(formula: str, data = None, var_names = None):
 
 # Formulas with pandas: makes more sense when working with different type of data, as numpy array
 # require that all values are the same type. Also, easier to work with variable names.
-def pandas_df_from_formula(formula: str, data = pd.DataFrame):
+def pandas_df_from_formula(formula: str, data: pd.DataFrame):
     # --- Instructions from the formula ---
     # Format formula
     f = formula.replace(' ', '')
